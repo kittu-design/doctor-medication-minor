@@ -12,6 +12,11 @@ import Careers from "./pages/Careers";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
 import NotFound from "./pages/NotFound";
+import DoctorDashboard from "./pages/DoctorDashboard";
+import AddPatient from "./pages/AddPatient";
+import PatientView from "./pages/PatientView";
+import MedicationsList from "./pages/MedicationsList";
+import AddMedication from "./pages/AddMedication";
 
 const queryClient = new QueryClient();
 
@@ -29,6 +34,11 @@ const App = () => (
           <Route path="/careers" element={<Careers />} />
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
+          <Route path="/doctor-dashboard" element={<DoctorDashboard />} />
+          <Route path="/add-patient" element={<AddPatient />} />
+          <Route path="/view-patient/:id" element={<PatientView />} />
+          <Route path="/view-medications/:id" element={<MedicationsList />} />
+          <Route path="/add-medication/:id" element={<AddMedication />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
