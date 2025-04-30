@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import FeatureCard from "@/components/FeatureCard";
-import { Calendar, FileMedical, Pills } from "lucide-react";
+import { Calendar, FileText, Pill } from "lucide-react";
 
 const Home = () => {
   return (
@@ -41,12 +41,12 @@ const Home = () => {
               <FeatureCard
                 title="Medication Management"
                 description="Track your medications, set reminders, and receive alerts for refills."
-                icon={<Pills size={32} />}
+                icon={<Pill size={32} />}
               />
               <FeatureCard
                 title="Medical History"
                 description="Store and access your complete medical history in one secure place."
-                icon={<FileMedical size={32} />}
+                icon={<FileText size={32} />}
               />
               <FeatureCard
                 title="Health Events"
